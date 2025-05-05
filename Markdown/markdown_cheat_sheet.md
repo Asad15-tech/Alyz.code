@@ -159,6 +159,6 @@ print(c)
 | -------- | ------------ | -------- | ------ |
 | Asad Aly | IGP | Punjab Police | Punjab Pakistan |
 | Adnan Aly | IGP | KPK Police | KPK Pakistan |
-| Zainab Ashraf | IGP | Sindh Police | Sindh Pakistan |
+| Md Ashraf | IGP | Sindh Police | Sindh Pakistan |
 
-# 13- Install Extensions
+
