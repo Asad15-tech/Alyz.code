@@ -11,8 +11,7 @@
 [9- Links/Hyperlinks](#9-links-and-hyperlinks)\
 [10- Images/Figures with Links](#10-images-and-figures-with-links)\
 [11- Adding Code/Block of Code](#11-adding-code-and-block-of-code)\
-[12- Tables](#12-adding-tables)\
-[13- Extensions](#13--install-extensions)
+[12- Tables](#12-adding-tables)
 # 2- Headings
 How to give headings in Markdown files?()
 
