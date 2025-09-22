@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero-section">
+    <div class="container text-center">
+        <h1 class="display-4">Welcome to Heart Disease Predictor</h1>
+        <p class="lead">Using advanced machine learning to help predict heart disease risk</p>
+        <a href="{% url 'predict' %}" class="btn btn-danger btn-lg">Get Your Prediction</a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Quick Prediction</h3>
+                    <p class="card-text">Get instant heart disease risk assessment using our ML model.</p>
+                    <a href="{% url 'predict' %}" class="btn btn-outline-danger">Start Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h3 class="card-title">Health Articles</h3>
+                    <p class="card-text">Read our latest articles about heart health and prevention.</p>
+                    <a href="{% url 'blog' %}" class="btn btn-outline-danger">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center">
+                    <h3 class="card-title">About Us</h3>
+                    <p class="card-text">Learn about our mission and the technology behind our predictions.</p>
+                    <a href="{% url 'about' %}" class="btn btn-outline-danger">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

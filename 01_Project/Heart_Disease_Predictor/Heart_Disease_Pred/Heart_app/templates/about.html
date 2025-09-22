@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="hero-section">
+        <h1 class="text-center">{{ about.title|default:"About Us" }}</h1>
+        <p class="text-center lead">Understanding our mission and technology</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    {% if about %}
+                        <h2 class="card-title">Our Mission</h2>
+                        <p class="card-text">{{ about.mission_statement|linebreaks }}</p>
+
+                        <div class="mt-4">
+                            {{ about.content|linebreaks }}
+                        </div>
+
+                        <div class="text-muted mt-4">
+                            <small>Last updated: {{ about.last_updated|date:"F d, Y" }}</small>
+                        </div>
+                    {% else %}
+                        <p class="text-center">About page content coming soon!</p>
+                    {% endif %}
+
+                    <h2 class="card-title mt-4">Disclaimer</h2>
+                    <p class="card-text">
+                        This tool is meant for educational purposes only and should not be used as a substitute for 
+                        professional medical advice. Always consult with a qualified healthcare provider about your 
+                        specific medical conditions and needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
